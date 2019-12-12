@@ -29,7 +29,7 @@ const getText = (text) => text.replace('\n', '<br />')
 const getImage = src => `https://upply-interview.herokuapp.com/images/${src}`
 const getDate = date => {
     if (!date) return null
-    return moment().format('MMMM Do YYYY, hh:mm')
+    return moment(date).format('MMMM Do YYYY, hh:mm')
 }
 
 const Post = ({title, text, date, src}) => (
